@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="filcher2011">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="icon" href="media/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="{% static '/slick/slickk/slick-theme.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/slick/slickk/slick.css' %}">
+        <script src="/static/js/jquery.js"></script>
+        <script src="/static/slick/slickk/slick.min.js"></script>
+        <title>filcher</title>
+    </head>
+    <body>
+        <header>
+            <!--Create div "Logo"-->
+            <div class="headerik">
+                <div class="logo">
+                    <div><img src="media/icon.webp" alt="icon" width="50px"></div>
+                    <p>filcher</p>
+                </div>
+                <!--Create div "Link"-->
+                <div class="link">
+                    <div class="about_me"><a href="#">Обо мне</a></div>
+                    <div class="portfolio"><a href="#">Портфолио</a></div>
+                    <div class="awards"><a href="#">Награды</a></div>
+                    <div class="otzivy"><a href="#">Отзывы</a></div>
+                    <div class="prices"><a href="#">Цены</a></div>
+                </div>
+                <!--Create div "Network"-->
+                <div class="network">
+                    <button onclick="document.location='https://vk.com/im?media=&sel=-225350853'">Написать</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="greating">
+                <div class="ghost">
+                    <img src="media/ghost.webp" alt="icon_ghost" width="335px">
+                </div>
+                <h1>Привет! 👋 <br>Я filcher2011</h1><br>
+                <p>filcher2011 - Филипп Чернышев - программист из России,<br>
+                    программирую на Python, HTML/CSS/JS и C++<br>
+                    Создаю сайты, ПО для Windows и Linux<br>
+                    Разносторонний мужчина</p>
+                <div class="btn_git_pypi">
+                    <button id="gthb"><img src="media/github.webp" alt="github"></button>
+                    <button id="pypi"><img src="media/pypi.webp" alt="pypi"></button>
+                </div><br>
+                <p id="socnet">                Социальные сети</p>
+                <div class="socnet">
+                    <div class="btn">
+                        <button><img src="media/vk.webp" alt="vk"></button>
+                        <button><img src="media/twitter.webp" alt="twitter"></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <section id="portfol">
+                    <h2 align="center">МОЕ ПОРТФОЛИО</h2>
+                    <div class="portfolio">
+                        {% for x in portfolio %}
+                            <div class="fakesusers">
+                                <div class="name"><br><h2>{{ x.title }}</h2></div>
+                                <div class="harak"><h4> Первая версия: {{ x.relise }}<br> Тип: {{ x.typepor }}</h4></div>
+                                <br><br>
+                                <div class="url_dop"><a href="#"> Подробнее...</a></div>
+                                </a>
+                            </div><br>
+                        {% endfor %}   
+                    </div>
+                    <a href="#" id="doplinkportf">Смотреть ещё</a>
+                </section>      
+            </div>
+            <br><br>
+            <div class="faq">
+                <h2>FAQ</h2>
+                <div class="block-questions">
+                    <div class="first_q">
+                        <details>
+                            <summary>Как тебя зовут?</summary>
+                            <p>Меня зовут Филипп</p>
+                        </details>
+                        <details>
+                            <summary>Из какого вы города?</summary>
+                            <p>Я из г.Ковров</p>
+                        </details>
+                        <details>
+                            <summary>Какие ЯП ты знаешь?</summary>
+                            <p>Python, HTML/CSS/JS, C++ и C#</p>
+                        </details>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="home"><h2 align="center">ОТЗЫВЫ</h2></div>
+            <div class="otzivy">
+                {% for x in review %}
+                <div class="first">
+                    <div class="photo_1"><img src="/media/{{x.ImagePeople}}" alt="AlexTroe" width="300px"></div>
+                    <div class="text">
+                        <h1 align="center">{{x.name_surname}}</h1>
+                        <p align="center">{{x.main_review}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            </div>
+            <br><br><br>
+            <h2 align="center">ЦЕНЫ</h2><br><br>
+            <div class="prices_block">
+                {% for x in services %}
+                <section>
+                    <div class="tab_first">
+                        <br>
+                        <div class="name_product"><h2>{{x.title}}</h2></div><br>
+                        <div class="price_product"><h3 align="center">от {{x.price}}₽</h3></div>
+                        <div class="despription_product"><p>{{x.firstDop}} <br> {{x.secondDop}} <br> {{x.thirdDop}} <br> {{x.fourdDop}}</p></div>
+                        <div class="btn_typing">
+                            <button>Написать</button>
+                        </div>
+                    </div>
+                </section>
+                {% endfor %}
+            </div>
+        </main>
+        <br><br>
+        <footer>
+            <div class="footerul">
+                <div class="linked">
+                    <a href="#">Награды</a>
+                    <a href="#">Портфолио</a>
+                    <a href="#">Домашняя страница</a>
+                </div>
+                <div class="info">
+                    <img src="media/icon.webp" width="50px">
+                    <p>Сайт filcher2011.github.io создан для ознакомления с автором и для покупки услуг</p>
+                    <p>filcher2011 (C)</p>
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+    <script src="/static/js/slick_slider.js"></script>
+</html>
