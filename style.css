@@ -1,0 +1,476 @@
+html {
+    transition: 1s ease;
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    position: absolute;
+    width: 98.950vw;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+
+header .about_me a{
+    color: #ff00d9;
+}
+
+.network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerik {
+    background-color: #000;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+    font-size: 16;
+    text-align: center;
+    border: 3px solid transparent;
+    border-image: linear-gradient(#ff00e6 , #5100ff) 30;
+    -moz-border-image: -moz-linear-gradient(#ff00e6 , #5100ff) 30;
+    -webkit-border-image: -webkit-linear-gradient(#ff00e6 , #5100ff) 30;
+    border-image-slice: 1;
+    transition: all 0.5s ease; 
+}
+
+header button:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient( #5100ff, #ff00e6) 30;
+    -moz-border-image: -moz-linear-gradient( #5100ff, #ff00e6) 30;
+    -webkit-border-image: -webkit-linear-gradient( #5100ff, #ff00e6) 30;
+    border-image-slice: 1;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-family: Helvetica;
+    padding: 10px;
+    transition: all 0.5s ease; 
+}
+
+header .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
+}
+
+header a:hover {
+    color: #ff00e6;
+}
+
+header p {
+    font-style: italic;
+    font-family: Helvetica;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+}
+
+main h1 {
+    margin-top: 100px;
+    margin-left: 156px;
+    color: #fff;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+main p {
+    margin-left: 156px;
+    color:#fff;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+main h2 {
+    color: #fff;
+    font-family: Helvetica;
+}
+
+main .greating .ghost img {
+    margin-right: 100px;
+    float: right;
+    border-radius: 88px;
+}
+
+main .btn_git_pypi button {
+    margin-left: 156px;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+}
+
+main .btn_git_pypi button img {
+    width: 50px;
+}
+
+main .btn_git_pypi #pypi{
+    background-color: #2000a1;
+    border: 3px solid #2000a1;
+}
+
+main .btn_git_pypi #pypi:hover{
+    background-color: #0f004d;
+    border: 3px solid #0f004d;
+    transition: all 0.5s ease;
+}
+
+#socnet {
+    color: #ffffff7f;
+}
+
+.socnet button {
+    width: auto;
+    height: auto;
+    margin-left: 156px;
+    background-color: #1A1A1A;
+    border: 3px solid #1A1A1A;
+}
+
+.socnet .btn {
+    padding: 15px;
+}
+
+.socnet button img {
+    width: 35px;
+}
+
+section .portfolio {
+    padding-bottom: 20px;
+    margin-right: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 4%;
+  }
+
+section .portfolio .fakesusers {
+    width: 300px;
+    height: 240px;
+    border-radius: 20px;
+    background-image: linear-gradient(120deg, rgb(44, 44, 44), black);
+}
+
+#doplinkportf {
+    margin-left: 45%;
+    color: rgba(255, 255, 255, 50%);
+    font-family: sans-serif;
+    text-decoration: none;
+    
+}
+
+section .portfolio .fakesusers .name {
+    text-align: center;
+    font-size: 18px;   
+}
+
+section .portfolio .fakesusers .harak {
+    color: #fff;
+    font-family: Helvetica;
+    font-style: italic;
+    text-align: left;
+    font-size: 14px;   
+}
+
+section .portfolio .fakesusers a {
+    color: #A6399B;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-style: italic;
+    text-align: left;
+    font-size: 14px;   
+    transition: all 0.5s ease; 
+}
+
+section .portfolio .fakesusers a:hover {
+    color: #7e2a76; 
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+details {
+    text-align: center;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 40px;
+}
+
+.otzivy {
+    display: flex;
+}
+
+.otzivy img {
+    margin-left: auto;
+    float: left;
+    border-radius: 88px;
+}
+
+.otzivy .text {
+    margin-top: 100px;
+    margin-left: 156px;
+    color: #fff;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+.otzivy .btn_navig {
+    margin-left: 950px
+}
+
+.otzivy .btn_navig button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #c800ff;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+.prices_block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.prices_block section {
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prices_block section .tab_first {
+    width: 340px;
+    height: 600px;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 60px;
+}
+
+.prices_block section .tab_first .name_product h2 {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+}
+
+.prices_block section .tab_first .price_product h3 {
+    color: #ff5ce9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+    font-size: 40px;
+}
+
+.prices_block section .tab_first .despription_product p {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.prices_block section .tab_first .btn_typing button {
+    background-color: #000;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 240px;
+    height: 70px;
+    transition: all 0.5s ease; 
+}
+
+.prices_block section .tab_first .btn_typing button:hover {
+    background-color: #760066;
+}
+
+.prices_block section .tab_second {
+    width: 340px;
+    height: 600px;
+    background-color: #000;
+    border: 3px solid transparent;
+    border: 5px solid #ffffff;
+    border-image-slice: 1;
+    border-radius: 60px;
+}
+
+.prices_block section .tab_second:hover {
+    border: 5px solid #ff5ce9;
+    transition: all 0.5s ease; 
+}
+
+.prices_block section .tab_first:hover {
+    border: 3px solid #ff5ce9;
+    transition: all 0.5s ease; 
+}
+
+.prices_block section .tab_third:hover {
+    border: 3px solid #ff5ce9;
+    transition: all 0.5s ease; 
+}
+
+.prices_block section .tab_second .name_product h2 {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+}
+
+.prices_block section .tab_second .price_product h3 {
+    color: #ff5ce9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+    font-size: 40px;
+}
+
+.prices_block section .tab_second .despription_product p {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.prices_block section .tab_second .btn_typing button {
+    background-color: #000;
+    border: 3px solid #ffffff;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 240px;
+    height: 70px;
+    transition: all 0.5s ease; 
+}
+
+.prices_block section .tab_second .btn_typing button:hover {
+    background-color: #760066;
+}
+
+.prices_block section .tab_third {
+    width: 340px;
+    height: 600px;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 60px;
+}
+
+.prices_block section .tab_third .name_product h2 {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+}
+
+.prices_block section .tab_third .price_product h3 {
+    color: #ff5ce9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: center;
+    font-size: 40px;
+}
+
+.prices_block section .tab_third .despription_product p {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: initial;
+    text-align: left;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.prices_block section .tab_third .btn_typing button {
+    background-color: #000;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 240px;
+    height: 70px;
+    transition: all 0.5s ease; 
+}
+
+.prices_block section .tab_third .btn_typing button:hover {
+    background-color: #760066;
+}
+
+footer {
+    position: relative;
+    width: 97.053vw;
+    padding: 0 8%;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica
+}
+
+.linked .footerul{
+    width: 97.5vw;
+    display: flexbox;
+}
+
+.linked a {
+    float: right;
+    display: block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.linked a:hover{
+    color: rgb(80, 0, 193);
+    transition: all 0.5s ease; 
+}
